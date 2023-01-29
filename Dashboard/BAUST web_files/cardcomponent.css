@@ -1,0 +1,206 @@
+.employee-card {
+    padding-left:5px !important;
+    padding-right:5px !important;
+}
+.cardcomponent {
+	color: #191919;
+    padding-bottom: 3px;
+    background: linear-gradient(transparent 65%, 65%);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 12px 7px -7px rgb(0 0 0 / 20%);
+    position: relative;
+    margin-bottom:20px;
+}
+.cardcomponent .card-area {
+	background: white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    margin: 0px 15px 15px 15px;
+    border-top: 15px solid white;
+    margin-top: 20px;
+}
+.cardcomponent .card-area .card-icon-area {
+    height: 203px !important;
+    color: white;
+    background: transparent;
+    font-size: 125px;
+    line-height: 68px;
+    border-radius: 0 0 50px 50px;
+}
+.cardcomponent .card-area .profile-img {
+    width: 170px;
+    height: 190px;
+    margin: auto;
+    border-radius: 26px;
+    border: 4px solid #6861BC;
+    overflow: hidden;
+}
+.cardcomponent .card-area .profile-img .image {
+    min-height: 190px;
+}
+.cardcomponent .card-area .card-info-area {
+	    padding: 0 12px 20px;
+}
+
+.cardcomponent .card-area .card-info-area .profile-contact-info span{
+	font-size: 12px;
+}
+.cardcomponent .card-area .card-info-area .profile-contact-info span i {
+	font-size: 12px;
+}
+.cardcomponent .description {
+        font-size: 14px;
+        margin: 0 0 15px;
+        }
+.cardcomponent .title {
+        color: #6861BC;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 7px;
+        min-height:31px;
+        }
+.cardcomponent .qualification {
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-height:35px;
+    max-height: 35px;
+    overflow: hidden;
+    color: #575656;
+    font-weight: bold;
+}
+ .cardcomponent  .read-more {
+        color:#6861BC;
+        font-size: 14px;
+        transition: all 0.3s ease 0s;
+        }
+        .cardcomponent-read-more-button {
+        cursor:pointer;
+        }
+        /* Read More Button */
+       .spot {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+          }
+            .svg-wrapper {
+              margin-top: 0;
+              position: relative;
+              width: 150px;
+
+              height: 40px;
+              display: inline-block;
+              border-radius: 3px;
+              margin-left: 5px;
+              margin-right: 5px;
+              transform: scale(0.9);
+            }
+            .svg-wrapper svg {
+              position: relative;
+            }
+            .shape {
+              stroke-width: 6px;
+              fill: transparent;
+              stroke: #009FFD;
+             /* stroke-dasharray: 85 400;
+              stroke-dashoffset: -220;*/
+              stroke-dasharray: 60 400;
+              stroke-dashoffset: -175;
+              transition: 1s all ease;
+            }
+            .text {
+              text-align: center;
+            }
+            .text  a {
+              color: #6861BC;
+              text-decoration: none;
+              font-weight: 100;
+              font-size: 1.1em;
+              transition: 1.5s ease;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              display: block;
+              transform: translate(-50%, -50%);
+              width: 100px;
+            }
+            .text  a:hover{
+              color: #06D6A0;
+            }
+            .svg-wrapper:hover .shape {
+              stroke-dasharray: 50 0;
+              stroke-width: 3px;
+              stroke-dashoffset: 0;
+              stroke: #06D6A0;
+            }
+            /* end read more button design */
+        /*litle extra */
+        .profile-sec-title {
+        font-size: 34px;
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 50px;
+        margin-top: 0px;
+        color: #6861BC;
+        }
+        .message-title { 
+        background: #6861BC;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0 0 7px;
+        color:#ffffff;
+        padding: 10px;
+        border: 15px 15px 0px 0px;
+        }
+        .designation-title {
+        font-size: 12px;
+        font-weight: 600;
+        color:#191919;
+        }
+        .serviece-info {
+        padding: 0 20px 20px;
+        }
+        .designation-title {
+            font-size: 12px;
+            font-weight: 600;
+            color:#2f3133;
+        }
+/* employee sub title */
+.employee-title {
+  color: #b80924 !important;
+  font-size: 24px;
+ }
+ .employee-title::after {
+   content: "";
+  display: table;
+  width: 80px;
+  height:3px;
+  background: #b80924;
+  transition: width 0.5s;   
+  margin-top:10px; 
+ }
+ .employee-title:hover::after {
+   width: 175px;
+  background: #b80924 !important;
+ }
+ @media only screen and (max-width: 991px){
+          .cardcomponent {
+          margin: 0 0 30px;
+        }
+        .cardcomponent .card-area {
+          padding: 0 35px 20px;
+        }
+      }
+
+  }
+ @media only screen and (max-width: 576px) {
+      .employee-title {
+          font-size: 18px !important;
+         }
+ }

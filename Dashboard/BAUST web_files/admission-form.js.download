@@ -1,0 +1,58 @@
+   
+           $(document).ready(function(){
+            $('.bkash').hide();
+        $('.bank').hide();
+        $('.office').hide();
+        $('.select-program-engineer').hide();
+        $('.select-program-nonengineer').hide();
+    });
+
+        $('input[name="Maritial-Status"]').click(function(){
+            method=$("input[type=radio][name=Maritial-Status]:checked").val(); 
+           
+            if(method==="bkash"){
+                $('.bkash').show();
+                $('.bank').hide();
+                $('.office').hide();
+            }
+            if(method==="My Bank"){
+                $('.bkash').hide();
+                $('.bank').show();
+                $('.office').hide();
+            }
+            if(method==="Cash"){
+                $('.bkash').hide();
+                $('.bank').hide();
+                $('.office').show();
+            }
+            
+        });
+        
+        $('input[name="Program-Status"]').click(function(){
+            method=$("input[type=radio][name=Program-Status]:checked").val(); 
+           
+            if(method==="Engineering"){
+                $('.select-program-engineer').show();
+                $('.select-program-nonengineer').hide();
+            }
+            if(method==="Non Engineering"){
+                $('.select-program-engineer').hide();
+                $('.select-program-nonengineer').show();
+            }
+            
+            
+        });
+        
+        jQuery(document).ready(function(){
+    jQuery('input[name=ProfilePicture]').on('change', function(){
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                jQuery('#divid').html('<img width="100" height="100" src="'+e.target.result+'">');
+            }
+            console.log(this.files[0]);
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+});
